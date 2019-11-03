@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<main>
+    <h1>TODO List</h1>
+    <hr>
+    <div class="main-container">
+        <form id="task-form">
+            <label class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" id="search" onkeyup="filters()" value="search by title">
+            </label>
+            <label>
+                <select name="task-done" id="task-done" onchange="getValue()" size="1">
+                    <option value="all">all</option>
+                    <option value="open">open</option>
+                    <option value="done">done</option>
+                </select>
+                <select name="task-priority" id="taskPriority"  size="1">
+                    <option value="all">all</option>
+                    <option value="high">high</option>
+                    <option value="normal">normal</option>
+                    <option value="low">low</option>
+                </select>
+                <input type="button" name="btn" id="btn" value="Create">
+            </label>
+        </form>
+    </div>
+    <div class="description-container">
+        <div class="description-wrapper">
+            <form>
+                <label for="title-task"> Title: </label> <br>
+                <input type="text" name="title-task" id="title-task" value="Title" > <br>
+                <label for="description-task"> Description: </label> <br>
+                <textarea name="description-task" id="description-task" >Description:</textarea>
+                <label for="task-priority"> Priority: </label> <br>
+                <select name="task-priority" id="task-priority" size="1">
+                    <option value="high">high</option>
+                    <option value="normal">normal</option>
+                    <option value="low">low</option>
+                </select>
+                <label class="description-btn">
+                    <input type="button" name="btn" id="btn-cancel" value="Cancel">
+                    <input type="button" name="btn" id="btn-save" value="Save">
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="collection">
+        <ul class="collection-ul">
+            <!--<li class = card-collection>-->
+                <!--<div class="card-container">-->
+                    <!--<div class="card-wrapper">-->
+                        <!--<h2 class="title-item"> </h2>-->
+                        <!--<p class="description-item"></p>-->
+                        <!--<select name="card-priority" id="card-priority" size="1">-->
+                            <!--<option value="high">high</option>-->
+                            <!--<option value="normal">normal</option>-->
+                            <!--<option value="low">low</option>-->
+                        <!--</select>-->
+
+                        <!--<select name="card-properties" id="card-properties" onchange="getValue()" size="1">-->
+                            <!--<option value="all" >...</option>-->
+                            <!--<option value="done">done</option>-->
+                            <!--<option value="edit">edit</option>-->
+                            <!--<option value="delete">delete</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
+

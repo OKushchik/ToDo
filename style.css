@@ -1,0 +1,170 @@
+body {
+  margin-top: 0;
+  height: 100vh;
+  background: lightgray;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+hr {
+  background: black;
+  height: 5px;
+}
+
+.main-container form {
+  margin-top: 100px;
+  text-align: center;
+}
+.main-container select {
+  width: 200px;
+  height: 40px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#search {
+  width: 300px;
+  height: 35px;
+  font-size: 25px;
+}
+
+#btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background: white;
+  font-size: 30px;
+}
+#btn:hover {
+  background: lightgray;
+}
+
+.search-wrapper {
+  position: relative;
+}
+.search-wrapper i {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  font-size: 30px;
+}
+.search-wrapper input {
+  padding-left: 45px;
+}
+
+.description-container {
+  display: none;
+  position: absolute;
+  background: white;
+  left: 40%;
+  margin: 20px auto;
+  width: 400px;
+  height: 550px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.description-wrapper {
+  margin: 0 auto;
+  width: 250px;
+}
+.description-wrapper form {
+  margin-top: 50px;
+  text-align: left;
+  font-size: 40px;
+  font-family: sans-serif;
+  width: 280px;
+  word-break: break-word;
+}
+.description-wrapper form #title-task, .description-wrapper form #description-task, .description-wrapper form #task-priority {
+  word-break: break-word;
+  width: 280px;
+  text-align: left;
+  font-family: sans-serif;
+  margin: 10px 0;
+  height: 50px;
+  font-size: 25px;
+}
+.description-wrapper form #description-task {
+  height: 100px;
+}
+.description-wrapper form .description-btn {
+  margin-left: 7%;
+}
+.description-wrapper form .description-btn #btn-cancel, .description-wrapper form .description-btn #btn-save {
+  margin-top: 10px;
+  width: 90px;
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background: white;
+  font-size: 20px;
+}
+.description-wrapper form .description-btn #btn-cancel:hover, .description-wrapper form .description-btn #btn-save:hover {
+  background: lightgray;
+}
+
+.card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.collection {
+  display: flex;
+  width: 1920px;
+}
+
+.collection-ul {
+  display: flex;
+}
+
+.collection li {
+  list-style: none;
+  padding: 0;
+}
+
+.card-container {
+  background: white;
+  display: none;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 40px;
+  border: 2px solid black;
+  word-break: break-word;
+}
+.card-container h2 {
+  font-size: 35px;
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+}
+.card-container p {
+  font-size: 25px;
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+}
+.card-container #card-priority {
+  float: left;
+  border: 2px dashed black;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+}
+.card-container #card-properties {
+  float: right;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
